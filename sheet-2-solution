@@ -1,0 +1,383 @@
+/* Write a Java program to get a number from the user and print whether it is positive or negative */
+import java.util.Scanner;
+public class Exercise1 {
+  public static void main(String[] args)
+    {
+        Scanner inP = new Scanner(System.in);
+        System.out.print("Input number: ");
+        int input = inP.nextInt();
+
+        if (input > 0)
+        {
+            System.out.println("Number is positive");
+        }
+        else if (input < 0)
+        {
+            System.out.println("Number is negative");
+        }
+        else
+        {
+            System.out.println("Number is zero");
+        }
+    }
+}
+/* Write a Java progam to get a number from the user and print whether it is odd or even */
+
+import java.util.Scanner;
+public class Exercise1 {
+  public static void main(String[] args)
+    {
+        Scanner inP = new Scanner(System.in);
+        System.out.print("Input number: ");
+        int input = inP.nextInt();
+
+        if (input % 2 == 0)
+        {
+            System.out.println("Number is EVEN");
+        }
+      
+        else
+        {
+            System.out.println("Number is ODD");
+        }
+    }
+}
+
+/*Write a Java program to find the number of days in a month. Expected output:
+
+Input a month numr: 3
+
+February has 31 days */
+
+import java.util.Scanner;
+public class Exercise1 {
+  public static void main(String[] args)
+    {
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Input a month numr:");
+        int NUMPER = inP.nextInt();
+         String MonthOfName = " ";
+         int number_Of_DaysInMonth = 0;
+switch (NUMPER) {
+            case 1:
+                MonthOfName = "December";
+                number_Of_DaysInMonth = 31;
+            case 2:
+                MonthOfName = "January";
+                number_Of_DaysInMonth = 31;
+                break;
+            case 3:
+                MonthOfName = "February";
+                number_Of_DaysInMonth = 31;
+
+                break;
+            case 4:
+                MonthOfName = "March";
+                number_Of_DaysInMonth = 31;
+                break;
+            case 5:
+                MonthOfName = "April";
+                number_Of_DaysInMonth = 30;
+                break;
+            case 6:
+                MonthOfName = "May";
+                number_Of_DaysInMonth = 31;
+                break;
+            case 7:
+                MonthOfName = "June";
+                number_Of_DaysInMonth = 30;
+                break;
+            case 8:
+                MonthOfName = "July";
+                number_Of_DaysInMonth = 31;
+                break;
+            case 9:
+                MonthOfName = "August";
+                number_Of_DaysInMonth = 31;
+                break;
+            case 10:
+                MonthOfName = "September";
+                number_Of_DaysInMonth = 30;
+                break;
+            case 11:
+                MonthOfName = "October";
+                number_Of_DaysInMonth = 31;
+                break;
+            case 12:
+                MonthOfName = "November";
+                number_Of_DaysInMonth = 30;
+                break;
+           
+        }
+        System.out.print(MonthOfName +' has '+   number_Of_DaysInMonth + " days ");
+    }
+}
+/*Write a Java program that takes the user to provide a single character from the alphabet. Print Vowel or Consonant, depending on the user input. If the user input is not a letter (between a and z or A and Z), or is a string of length > 1, print an error message
+
+Expected output:
+
+Input an alphabet: p
+
+Input letter is Consonant*/
+import java.util.Scanner;
+public class Exercise {
+    public static void main(String[] arg) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input an alphabet: ");
+        char alphabet=in.next( ).charAt(0);
+        //char alphabet = in.nextChar();
+        String X = alphabet + "" ;
+        if (X.length() == 1 && !(Integer.parseInt(X) > 0)){
+            switch (alphabet) {
+            case 'A':
+                System.out.print("Input letter is Vowel ");
+            case 'I':
+                System.out.print("Input letter is Vowel ");
+                break;
+            case 'E':
+                System.out.print("Input letter is Vowel ");
+                break;
+            case 'U':
+                System.out.print("Input letter is Vowel ");
+                break;
+            case 'O':
+                System.out.print("Input letter is Vowel ");
+                break;
+            case 'a':
+                System.out.print("Input letter is Vowel ");
+                break;
+            case 'i':
+                System.out.print("Input letter is Vowel ");
+                break;
+            case 'e':
+                System.out.print("Input letter is Vowel ");
+                break;
+            case 'u':
+                System.out.print("Input letter is Vowel ");
+                break;
+            case 'o':
+                System.out.print("Input letter is Vowel ");
+                break;
+            default:
+                System.out.print("Input letter is Constant ");
+            }
+        } else {
+            System.out.print("Error ");
+
+        }
+    }
+}
+/*5. Write a Java program that accepts three numbers and prints "All numbers are equal" if all three numbers are equal, "All numbers are different" if all three numbers are different and "Neither all are equal or different" otherwise.
+
+Expected output:
+
+Input first number: 2564 Input second number: 3526 Input third number: 2456
+
+All numbers are different
+*/
+import java.util.Scanner;
+public class Excercise {
+ 
+  public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+ 
+        System.out.print("Input first number: ");
+        int num1 = in.nextInt();
+        System.out.print("Input second number: ");
+        int num2 = in.nextInt();
+        System.out.print("Input third number: ");
+        int num3 = in.nextInt();
+ 
+        if (num1 == num2 && num1  == num3)
+        {
+            System.out.println("All numbers are equal");
+        }
+        else if ((num1 == num2) || (num1 == num3) || (num3 == num2))
+        {
+            System.out.println("Neither all are equal or different");
+        }
+        else
+        {
+            System.out.println("All numbers are different");
+        }
+    }
+}
+/*Write a program that accepts three numbers from the user and prints "increasing" if the numbers are in increasing order, "decreasing" if the numbers are in decreasing order, and "Neither increasing or decreasing order" otherwise
+
+Expected output:
+
+Input first number: 1524
+
+Input second number: 2345
+
+Input third number: 3321
+
+Increasing order
+*/
+import java.util.Scanner;
+public class Exercise {
+   public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input first number: ");
+        double x = in.nextDouble();
+        System.out.print("Input second number: ");
+        double y = in.nextDouble();
+       System.out.print("Input third number: ");
+        double z = in.nextDouble();
+        if (x < y && y < z)
+        {
+            System.out.println("Increasing order");
+        }
+        else if (x > y && y > z)
+        {
+            System.out.println("Decreasing order");
+        }
+        else
+        {
+            System.out.println("Neither increasing or decreasing order");
+        }
+    }
+}
+/*Write a program that arrange (in ascending order) three numbers given by user.
+*/
+ import java.util.Scanner; 
+
+public class Exercise {
+  public static void main(String[] args) {
+
+    Scanner inp = new Scanner(System.in); 
+    System.out.print("Enter three numbers.");
+
+    int x = inp.nextInt();
+    int y = inp.nextInt(); 
+    int z = inp.nextInt();
+    if (x > y) {
+        if (z>x){
+            System.out.print(z+">"+x+">"+y);
+        }
+       else if (z<x && z>y){
+            System.out.print(x+">"+z+">"+y);
+       }
+       else {
+            System.out.print(x+">"+y+">"+z);
+
+       }
+    }
+    else{
+          if (z>y){
+            System.out.print(z+">"+y+">"+x);
+        }
+       else if (z<y && z>x){
+            System.out.print(y+">"+z+">"+x);
+       }
+       else {
+            System.out.print(y+">"+x+">"+z);
+}}}}
+
+/*Write a program that finds closest number to 100 from three numbers given by user
+
+Expected output
+
+Input first number: 1000
+
+input second number: 700
+
+Input third number: -5
+
+The closest number to 100 is-5
+
+
+*/
+
+import java.util.Scanner; 
+
+public class Exercise {
+  public static void main(String[] args) {
+
+    Scanner inp = new Scanner(System.in); 
+    System.out.print("Enter three numbers.");
+
+    int x = inp.nextInt();
+    int y = inp.nextInt(); 
+    int z = inp.nextInt();
+   
+    int xx = 100 -x ;
+    int yy = 100 -y ;
+    int zz = 100 -z ;
+    if (xx<0){xx=xx*-1;}
+    else if (yy<0) {yy=yy*-1;}
+    else if  (zz<0) {zz=zz*-1;}
+    if (xx<yy && xx<zz) {         
+       System.out.print("The closest number to 100 is " +x);}
+    else if (yy<xx && yy<zz) {
+        System.out.print("The closest number to 100 is " + y);}
+     else if (zz<yy && zz<xx) {
+        System.out.print("The closest number to 100 is " + z);}}}
+     
+
+/* Write a program to check whether triangle is equilateral, scalene or isosceles
+
+For first 50 units LE. 0.50/unit
+
+*/
+ import java.util.Scanner; 
+
+public class Exercise {
+  public static void main(String[] args) {
+
+    Scanner inp = new Scanner(System.in); 
+    System.out.print("Enter three numbers.");
+
+    int x = inp.nextInt();
+    int y = inp.nextInt(); 
+    int z = inp.nextInt();
+    
+    if (x == y && y == z )
+      {  System.out.println("triangle is equilateral");}
+    else if (x == y || y == z || z == x )
+        {System.out.println("triangle is isosceles");}
+    else
+       { System.out.println("triangle is Scalene");}}}
+       
+       /*Write a program to check whether triangle is equilateral, scalene or isosceles
+
+For first 50 units LE. 0.50/unit
+
+10. Write a program to input electricity unit charge and calculate the total electricity bill according to the given condition: For next 100 units LE. 1.20/unit
+
+For next 100 units LE. 0.75/unit
+
+For unit above 250 LE. 1.50/unit An additional surcharge of 20% is added to the bill
+
+Examples:
+
+Input used units: 150
+
+Output: 120 LE.
+*/
+
+ import java.util.Scanner; 
+
+public class Exercise {
+  public static void main(String[] args) {
+
+    Scanner inp = new Scanner(System.in); 
+    System.out.print("Input used units :");
+    double units = inp.nextDouble();
+    double bill=0;
+  if (units <= 50 && units > 0 ) {
+      bill= units * 0.50;
+  }
+   if (units <= 150 && units > 50 ) {
+      bill= (50*.50) + ((units-50)*0.75);
+  }
+   if (units <= 250 && units > 150 ) {
+      bill=(50*0.50) +(100*0.75) +((units-150)*1.20);
+  }
+   if (units > 250) {
+      bill=(50*0.50) +(100*0.75) +(100*1.20)+((units-250)*1.50);
+  }
+  bill=bill+ bill*0.20;
+            System.out.print("Output: " + bill + " LE");}}
